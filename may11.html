@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            box-sizing: border-box; 
+            font-family: sans-serif; 
+            margin: 0; 
+            padding: 0;
+        }
+        body{
+            color: #333; 
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 15px 10%;
+            margin:auto;
+            position: sticky;
+            top: 0;
+            background-color: whitesmoke;
+        }
+        .nav-links{
+            display: flex; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+            gap: 20px;
+        }
+        .nav-links a{
+            text-decoration: none; 
+            color: #333;
+        }
+
+        /*Hero Section*/
+        /* .hero{
+            text-align: center; 
+            padding: 10em 10em; 
+            background: #f9f9f9;
+            width: 100%;
+            min-height: 450px;
+            background-image: url(bg-img.jpeg);
+            background-size: cover;
+            background-color: brown;
+        }
+        ::before{
+            opacity: 0.5;
+        }
+        .hero h1{
+            font-size: 3rem; 
+            margin-bottom: 15px;
+        }
+        .btn{
+            display: inline-block; 
+            padding: 10px 25px; 
+            border: 2px solid #333; 
+            text-decoration: none; 
+            color: #333; 
+            margin-top: 20px;
+        } */
+
+        .hero{
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 1.5rem 100px;
+            overflow: hidden;
+        }
+
+        .hero-bg{
+            position: absolute;
+            inset: 0;
+            background-image: url(bg-img.jpeg);
+            z-index: 0;
+        }
+
+        .hero-overlay{
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.75) 50%, rgba(37, 99, 235, 0.65) 100%);
+            z-index: 1;
+        }
+
+        .hero-content{
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        /*Features Section*/
+        .features{display: flex; justify-content: space-around; padding: 50px; gap: 20px;}
+        .feature-card{border: 1px solid #ccc; padding: 20px; flex: 1; text-align: center;}
+
+        /*Split Content Section*/
+        .content-split{display: flex; align-items: center; justify-content: space-between; padding: 50px; width: 100%; gap: 40px; box-sizing: border-box;}
+        .content-text{flex: 1; width: 50%}
+        .content-text h3{background: transparent; background-color: transparent; padding: 0; margin-bottom: 15px; color: #333;}
+        .content-image{flex: 1; width: 50%;}
+        .content-image img{width: 100%; height: auto; object-fit: cover; display: block;}
+
+        /*Footer*/
+        footer{background: #f4f4f4; padding: 40px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 50px; border-top: 1px solid #ddd;}
+        footer h4{margin-bottom: 15px; color: #333; display: block; width: 100%;}
+        footer ul{list-style: none; padding: 0; margin: 0;}
+        footer li{margin-bottom: 8px;}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="tuku.jpg" alt="logo" width="100px" height="100px"> </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="service">Service</a></li>
+            <li><a href="media">Media</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Heading Text</h1><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore numquam eius consequuntur dignissimos delectus rem ea quos eaque saepe suscipit officia, eos nisi est vel blanditiis a esse, maiores tenetur.</p><br>
+        <a href="" class="btn">Read More</a>
+</section>
+
+<section class="features">
+    <div class="card-flex-container">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea earum, fuga amet quod similique molestias sequi assumenda quis neque. Corrupti odio cumque possimus hic ea nostrum aperiam sapiente nihil.</p>
+</div>
+<div class="card">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quaerat fuga repellat adipisci est, non nesciunt. Assumenda earum unde fuga ab quasi eveniet nobis, non voluptate aperiam id eum doloribus.</p>
+</div>
+<div class="card">
+    <h3>Heading</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi natus consectetur dignissimos nisi omnis. Delectus amet neque dolorem atque totam magni. Nam, ex. Voluptates saepe dignissimos eveniet similique consectetur officia!</p>
+</div>
+</section>
+<!--Content Section-->
+<section class="content-split">
+    <div class="content-text">
+<h2>Heading Text</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quam corporis dolor ut neque soluta expedita deserunt impedit sapiente, minima iusto quibusdam rem earum accusantium error odio facilis, non adipisci velit quo, porro voluptates rerum corrupti! Consequatur facere ad autem harum quam repellendus ducimus voluptatum odit maiores, beatae, explicabo adipisci debitis cumque eligendi quo, vitae atque nihil. Delectus facilis eum excepturi. At, ipsa cumque harum voluptatum necessitatibus praesentium recusandae error fugit possimus architecto dolorem nulla est sed voluptatem. Explicabo suscipit quia voluptates ex dolores qui, unde impedit itaque doloremque odit possimus, nulla natus totam eum rem facilis nemo dicta error architecto ipsa iste? Laborum laudantium consequuntur porro, eum minus fugiat nulla corrupti suscipit, quisquam numquam alias sequi consequatur commodi velit, ullam unde? Placeat debitis libero doloribus magnam nesciunt voluptates, impedit maxime, tempora, nemo tempore officiis cum commodi quae. Neque laudantium ipsa impedit voluptas mollitia non suscipit ex facere asperiores consectetur, aspernatur, esse nihil ut. Quasi placeat quam earum, ab consequuntur consectetur quos iusto, a similique porro expedita animi id. Repellendus fuga fugiat debitis! Blanditiis ut doloremque maiores molestiae commodi illo esse. Ea quas, assumenda suscipit soluta autem saepe! Dolores deserunt eligendi rem nam ullam minus. Quis ad consectetur optio, reiciendis quisquam atque labore repellendus ea perferendis itaque iusto sit aperiam veritatis? Harum totam sed recusandae vitae? Quia iure voluptatibus harum mollitia natus sequi in maiores sunt cumque aliquid, consectetur reprehenderit deleniti dolorem? Distinctio vero commodi accusantium laboriosam ab repudiandae iusto maiores asperiores dolorem quos quibusdam qui aperiam eligendi impedit consequuntur obcaecati reiciendis tempore quia velit, at sed excepturi. Aliquid tempore expedita assumenda possimus. Quia assumenda magnam magni modi numquam, cumque voluptatum sunt. Magnam reprehenderit, pariatur, cum quam provident id ipsam facere natus, modi sequi laudantium minima iste. Temporibus reprehenderit laboriosam voluptatibus deserunt molestias. Laborum eum rerum voluptate officiis sed nulla odit, iusto aperiam voluptatum, placeat, doloremque aliquam autem dignissimos harum dolorem dolores nisi illo consequatur expedita. Aperiam suscipit eveniet quaerat quo. Ratione magni ipsam amet modi non provident explicabo dolore, doloribus nulla assumenda corporis fugit excepturi nobis eos fugiat quisquam unde. Inventore et voluptate dolore ullam rerum, quidem provident repellat, nam dicta excepturi laborum tempora laboriosam quisquam nihil ad, error repudiandae placeat maiores neque adipisci voluptates voluptatem ab minus! Beatae amet fugit sapiente praesentium molestias quo, quod quaerat dolor non libero commodi magni soluta fuga porro, quos repudiandae quam quae dolorum. Quasi, ipsa? Ut fugiat ipsam corporis blanditiis magnam voluptas amet nam officia ratione corrupti, eveniet ab at expedita et! At similique voluptatem dolores iusto temporibus ratione dolorum enim voluptas rerum, repellat, ad rem odit cum aliquid soluta dicta autem amet eligendi harum ipsam nesciunt vitae exercitationem veniam. Nihil ut commodi a possimus. Distinctio laudantium dolorem placeat impedit optio deleniti et, excepturi vel voluptas, praesentium voluptatem nam aliquam perferendis ipsam? Reprehenderit porro sit asperiores pariatur odit explicabo cum, unde error repudiandae laborum? Cupiditate quo id, aliquid iste numquam architecto vero natus doloribus? Magni blanditiis, incidunt voluptates, eligendi hic animi rem voluptatibus dignissimos perspiciatis dolores odit quasi mollitia, dolore consectetur inventore.</p>
+<button class="btn">Buttton</button>
+    </div>
+<div class="content-image">
+<img src="1227.jpg"  alt="Feature Image" width="300" height="300">
+</div>
+</section>
+<!--Footer-->
+<footer>
+    <div>
+        <h4>About</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, natus modi ratione nulla quos explicabo voluptatem quas sit accusamus quis possimus minima fugit harum aperiam quaerat atque velit deserunt id a error labore iusto! Veritatis quod maiores vitae ad distinctio cum, atque ullam, qui excepturi aspernatur, nemo exercitationem a ducimus?</p>
+    </div>
+    <div>
+        <h4>Resources</h4>
+        <ul>
+            <li><a href="may.cc">CSS Practice</a></li>
+            <li><a href="quiz1.html">Quiz1</a></li>
+            <li><a href="index.html">Home Page</a></li>
+        </ul>
+    </div>
+    <div>
+        <h4>Quick Link</h4>
+        <a href="april8.html">April8 Practice</a>
+    </div>
+    <div>
+        <h4>Contact</h4>
+        <ul>
+            <li><a href="mailto:izzettatokeh@gmail.com">izzettatokeh@gmail.com</a></li>
+            <li><a href="tel:+231881609189">+231 (881) (609) (189)</a></li>
+            <li>Monrovia, Liberia</li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+</html>

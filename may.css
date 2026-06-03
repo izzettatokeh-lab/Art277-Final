@@ -1,0 +1,14 @@
+
+        h2{background-color: brown; 
+            font-size: 20px; 
+            margin: 10px; 
+            padding: 10px;
+        }
+        p{
+            color: blue;
+            font-size: 16px;
+        }
+        .para{
+            color: red;
+            text-transform: uppercase;
+        }
